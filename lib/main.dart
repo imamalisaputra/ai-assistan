@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
 
   bool isLoading = false;
 
-  // 🔴 GANTI API KEY KAMU
+  
   final String apiKey = "AIzaSyASmmmcyBKzSNQvGXsKimopP7gdFSemDBY";
 
   Future<void> generateAnswer(String prompt) async {
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          // 🔹 HEADER AI
+         
           Container(
             padding: const EdgeInsets.all(16),
             width: double.infinity,
@@ -156,7 +156,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
-          // 🔹 CHAT AREA
+          
           Expanded(
             child: ListView.builder(
               controller: _scrollController,
@@ -199,7 +199,7 @@ class _HomePageState extends State<HomePage> {
               child: CircularProgressIndicator(),
             ),
 
-          // 🔹 INPUT
+       
           Container(
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
             color: const Color(0xFF020617),
